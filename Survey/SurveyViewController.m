@@ -6,10 +6,9 @@
 //  Copyright 2011 Massachusetts Institute of Technology. All rights reserved.
 //
 
-#import "SecondViewController.h"
-#import "DetailViewController.h"
+#import "SurveyViewController.h"
 
-@implementation SecondViewController
+@implementation SurveyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -98,11 +97,7 @@
     }
     else
     {
-        DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:[NSBundle mainBundle]];
-        //dvController.selectedCountry = selectedCountry;
-        [self.navigationController pushViewController:dvController animated:YES];
-        [dvController release];
-        dvController = nil;
+      NSLog(@"Removed code for DetailViewController");
     }
 }
 
@@ -276,12 +271,8 @@
         }
     }
     else{
-        //Initialize the detail view controller and display it.
-        DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:[NSBundle mainBundle]];
-        //dvController.selectedCountry = selectedCountry;
-        [self.navigationController pushViewController:dvController animated:YES];
-        [dvController release];
-        dvController = nil;
+
+      // Removed code for DetailViewController
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

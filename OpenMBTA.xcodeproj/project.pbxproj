@@ -38,6 +38,8 @@
 		DEC08072107EBC3900B22DE8 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC0806B107EBC3900B22DE8 /* SBJsonParser.m */; };
 		DEC08073107EBC3900B22DE8 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC0806D107EBC3900B22DE8 /* SBJsonWriter.m */; };
 		DEC08091107EBE0C00B22DE8 /* trips-bus-1.json in Resources */ = {isa = PBXBuildFile; fileRef = DEC08090107EBE0C00B22DE8 /* trips-bus-1.json */; };
+		DECBD9FE143AC4840012B462 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DECBD9FD143AC4840012B462 /* SurveyViewController.m */; };
+		DECBDA00143AC9920012B462 /* PlainTableViewSectionHeader_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DECBD9FF143AC9920012B462 /* PlainTableViewSectionHeader_5.png */; };
 		DECDFB0B124BF36A005064D6 /* StopsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DECDFB09124BF36A005064D6 /* StopsViewController.m */; };
 		DECDFB0C124BF36A005064D6 /* StopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DECDFB0A124BF36A005064D6 /* StopsViewController.xib */; };
 		DECDFC7A124D3F18005064D6 /* GridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DECDFC79124D3F18005064D6 /* GridCell.xib */; };
@@ -116,6 +118,9 @@
 		DEC0806C107EBC3900B22DE8 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		DEC0806D107EBC3900B22DE8 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		DEC08090107EBE0C00B22DE8 /* trips-bus-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "trips-bus-1.json"; path = "DummyData/trips-bus-1.json"; sourceTree = "<group>"; };
+		DECBD9FC143AC4840012B462 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
+		DECBD9FD143AC4840012B462 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		DECBD9FF143AC9920012B462 /* PlainTableViewSectionHeader_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainTableViewSectionHeader_5.png; sourceTree = "<group>"; };
 		DECDFB08124BF36A005064D6 /* StopsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopsViewController.h; sourceTree = "<group>"; };
 		DECDFB09124BF36A005064D6 /* StopsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopsViewController.m; sourceTree = "<group>"; };
 		DECDFB0A124BF36A005064D6 /* StopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsViewController.xib; sourceTree = "<group>"; };
@@ -254,6 +259,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				DECBD9FF143AC9920012B462 /* PlainTableViewSectionHeader_5.png */,
+				DECBD9FB143AC4830012B462 /* Survey */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -322,6 +329,15 @@
 				DEC0806D107EBC3900B22DE8 /* SBJsonWriter.m */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		DECBD9FB143AC4830012B462 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				DECBD9FC143AC4840012B462 /* SurveyViewController.h */,
+				DECBD9FD143AC4840012B462 /* SurveyViewController.m */,
+			);
+			path = Survey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +412,7 @@
 				DE0A4B8E124FD0B000751514 /* ProgressView.xib in Resources */,
 				DED28856124FDF850092D987 /* loadingIndicator.png in Resources */,
 				DED2890A125006A10092D987 /* LocatingProgress.xib in Resources */,
+				DECBDA00143AC9920012B462 /* PlainTableViewSectionHeader_5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +451,7 @@
 				DECDFB0B124BF36A005064D6 /* StopsViewController.m in Sources */,
 				DECDFC83124D3F5B005064D6 /* GridScrollView.m in Sources */,
 				DECDFC94124D3FB2005064D6 /* GridCell.m in Sources */,
+				DECBD9FE143AC4840012B462 /* SurveyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SecondViewController : UITableViewController {
+@interface SurveyViewController : UITableViewController {
     
-    //IBOutlet UIView *headerView;
+  //IBOutlet UIView *headerView;
 	NSMutableArray *listOfItems;
-    NSMutableArray *checked;
-    NSInteger *currentCategory;
+  NSMutableArray *checked;
+  NSInteger *currentCategory;
     
-    //@property (nonatomic, retain) UIView *headerView;
+  //@property (nonatomic, retain) UIView *headerView;
     
 }
 

@@ -5,6 +5,7 @@
 #import "GetRemoteDataOperation.h"
 #import "TweetsViewController.h"
 #import "AboutViewController.h"
+#import "SurveyViewController.h"
 #import "Preferences.h"
 
 
@@ -15,7 +16,7 @@
     [super viewDidLoad];
 
     self.menu = [[NSArray alloc] initWithObjects:@"Bus", @"Commuter Rail", @"Subway", @"Boat", nil];
-    self.menu2 = [[NSArray alloc] initWithObjects:@"T Alerts", @"Tweets #mbta", @"About / FAQ", nil];
+    self.menu2 = [[NSArray alloc] initWithObjects:@"Survey", @"T Alerts", @"Tweets #mbta", @"About / FAQ", nil];
 
     self.title = @"Main Menu";
 
@@ -146,14 +147,14 @@
         [self.navigationController pushViewController:routesViewController animated:YES];
 
     } else if (indexPath.section == 2) {
-        if (indexPath.row == 0) { 
+        if (indexPath.row == 1) { 
             if (tAlertsViewController == nil) {
                 tAlertsViewController = [[TAlertsViewController alloc] initWithNibName:@"TAlertsViewController" bundle:nil];
             }
             [self.navigationController pushViewController:tAlertsViewController animated:YES];
             return;
         }
-        if (indexPath.row == 1) { 
+        if (indexPath.row == 2) { 
             if (tweetsViewController == nil) {
                 tweetsViewController = [[TweetsViewController alloc] initWithNibName:@"TAlertsViewController" bundle:nil];
             }
@@ -161,8 +162,16 @@
             return;
         }
         
-        if (indexPath.row == 2) { 
+        if (indexPath.row == 3) { 
             AboutViewController *vc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+            [vc release];
+            return;
+        }
+        
+        
+         if (indexPath.row == 0) { 
+            SurveyViewController *vc = [[SurveyViewController alloc] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:vc animated:YES];
             [vc release];
             return;
